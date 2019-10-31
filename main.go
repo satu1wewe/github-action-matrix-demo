@@ -17,5 +17,5 @@ func init() {
 
 func main() {
 	flag.Parse()
-	fmt.Println("gopherType = ", gopherType)
+	fmt.Println("gopherType =", gopherType)
 }
