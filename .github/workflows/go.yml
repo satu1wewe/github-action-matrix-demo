@@ -26,4 +26,4 @@ jobs:
         hostname
         date
         go run main.go -g=${{ matrix.flag }}
-        sleep 600
+        # sleep 600
