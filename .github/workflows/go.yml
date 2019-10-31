@@ -24,5 +24,6 @@ jobs:
     - name: Build
       run: |
         hostname
+        date
         go run main.go -g=${{ matrix.flag }}
-        sleep 300
+        sleep 600
