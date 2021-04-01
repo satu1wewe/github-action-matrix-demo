@@ -6,7 +6,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     strategy:
-      matrix:
+      matrix: 
         go: [1.12, 1.13]
         flag: [abc, xyz]
 
