@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix: 
-        go: [1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.10, 1.11, 1.01, 1.02, 1.03, 1.04, 1.05, 1.06, 1.07, 1.08, 1.09]
+        go: [1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.10, 1.11, 1.01, 1.08, 1.09]
         flag: [abc, xyz, ctr, sds, ytu, iuf, fre, hit, jgy, yir, uyt, iyt, poi, lit, ase, tyv, ajt, vuy]
 
     steps:
